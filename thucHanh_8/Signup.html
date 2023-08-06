@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <p>Handcratz</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="">Collections</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Sale</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+
+        <form action="">
+            <input type="text" placeholder="What are you looking for?">
+            <input type="button" value="Search">
+        </form>
+    </header>
+
+    <main>
+        <div id="main_content">
+            <h2>Sign up for free updates, latest news, and special offers</h2>
+            <div class="content">
+                <div class="img"></div>
+                <div class="form_container">
+                    <form class="form_main" id="signupForm" action="">
+                        <input type="text" placeholder="Your name" id="name">
+                        <input type="text" placeholder="Your email" id="email">
+                        <input type="password" placeholder="Your password" id="password">
+                        <input type="password" placeholder="Re-enter password" id="repassword">
+                        <input type="button" name="signupButton" value="Sign Up" id="signupButton">
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <footer>
+            <div id="top_footer">
+                <div class="top_footer_content">
+                    <h3>Customer Services</h3>
+                    <ul class="list-footer">
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Return</a></li>
+                        <li><a href="#">Site map</a></li>
+                        <li><a href="#">Gift Vouchers</a></li>
+                    </ul>
+                </div>
+                <div class="top_footer_content">
+                    <h3>Informations</h3>
+                    <ul class="list-footer">
+                        <li><a href="#">About me</a></li>
+                        <li><a href="#">Delivery information</a></li>
+                        <li><a href="#">Private policy</a></li>
+                    </ul>
+                </div>
+                <div class="top_footer_content">
+                    <h3>Social Network Link</h3>
+                    <ul class="list-footer">
+                        <li><a href="#">Face book</a></li>
+                        <li><a href="#">Google +</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="bottom_footer">
+                <p>2021ⓒHandcraftz.Design</p>
+            </div>
+        </footer>
+    </main>
+        <script>
+            const signupForm = document.getElementById('signupForm');
+            const nameInput = document.getElementById('name')
+            const emailInput = document.getElementById('email');
+            const passwordInput = document.getElementById('password');
+            const repasswordInput = document.getElementById('repassword');
+            const signupButton = document.getElementById('signupButton');
+    
+            signupButton.addEventListener('click', function() {
+                const name = nameInput.value;
+                const email = emailInput.value;
+                const password = passwordInput.value;
+                const repassword = repasswordInput.value;
+    
+                if (!name || !email || !password || !repassword) {
+                    alert('Vui lòng điền đầy đủ thông tin.');
+                }else if (!isValidEmail(email)) {
+                    alert('Email không hợp lệ!');
+                } else if (password.length < 8) {
+                    alert('Password phải có ít nhất 8 ký tự!');
+                } else if (password !== repassword) {
+                    alert('Re-enter password không khớp với password!');
+                } else {
+                    alert('Đăng ký thành công!');
+                    // Tại đây, bạn có thể thực hiện xử lý đăng ký thêm nếu cần
+                }
+            });
+    
+            function isValidEmail(email) {
+                const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+                return emailPattern.test(email);
+            }
+        </script>
+</body>
+</html>
