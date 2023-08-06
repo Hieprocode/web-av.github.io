@@ -1,0 +1,192 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* width: 1200px; */
+    /* margin-left: 10%; */
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+body #main{
+    align-content: center;
+    width: 1200px;
+    margin-left:15%;
+    margin-right: 15%;
+   
+}
+
+header{
+    display:flex;
+    place-content: center;
+    background-color: lightgray;
+}
+
+#header{
+    width: 90%;
+}
+
+header #header {
+    display: flex;
+     place-content: center;
+}
+
+#hnav {
+    margin-left: 200px ;
+    margin-right: 60px;
+}
+
+#hnav .menu li {
+    float: left;    
+    list-style-type: none;
+    line-height: 50px;
+}
+
+#hnav .menu li a {
+    text-decoration: none;
+    color: #0164bf;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+}
+
+
+header form{
+    margin-top: 3px;
+}
+
+header form input{
+    height: 25px;
+    background-color: deepskyblue;
+}
+
+header form button{
+    color: white;
+    font-size: 20px;
+    background-color: blue;
+    border: none;
+    padding: 5px;
+}
+/* slider */
+
+#slider img{
+    width: 100%;
+}
+#slider {
+    color: green;
+    background-color: lightgray;
+}
+
+#slider marquee{
+    font-size: 40px;
+}
+/* content */
+#content{
+    margin-top: 5px;
+}
+
+.main-content{
+    background-color: lightgray;
+}
+
+.main-content .list{
+    
+    height: 500px;
+    width: 30%;
+    background-color: darkgoldenrod;
+    float: left;
+    margin-right: 50px;
+    
+}
+
+.main-content .list {
+    margin-left: 15px;
+}
+
+.main-content .list li {
+    margin: 18px;
+    color: white;
+}
+
+.main-content .list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.list-content{
+display: flex;
+}
+
+.list-content h4{
+    color: #0164bf;
+    font-size: 25px;
+    margin-left: 35px;
+}
+
+.list-content p{
+    margin: 25px;
+    padding: 5px 40px 0 15px;
+    font-size: 20px;
+}
+
+.content-bottom{
+    font-size: 150%;
+    background-color: lightgray;
+    margin-top: 5px;
+    height: 400px;
+}
+
+div .video{
+    width: 50%;
+    float: left;
+    align-content: center;
+    
+    
+}
+
+.video video{
+    width: 50%;
+    height: auto;
+    margin-left: 100px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    
+}
+
+
+
+.text-content {
+    width: 50%;
+    float: right;
+}
+
+div .text-content h2{
+    color: #0164bf;
+}
+
+div .text-content span{
+    color: #0164bf;
+}
+
+.text-content p{
+    margin-bottom: 30px;
+}
+
+footer{
+    clear: both;
+    margin-top: 5px;
+}
+/* footer */
+
+footer{
+    background-color: lightgray;
+}
+
+footer img{
+    width: 100%;
+}
